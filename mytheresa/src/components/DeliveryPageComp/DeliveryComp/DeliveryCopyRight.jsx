@@ -3,7 +3,7 @@ import { Box, HStack, Link, Stack, Text } from "@chakra-ui/react"
 
 function DeliveryCopyRight(props) {
     return (
-        <Stack direction={["column-reverse" , "column-reverse" ,"row" ]} justify="space-between" w={["97%" , "95%"]} m="auto" my="20px" gap={["10px" , "10px" , "0"]}>
+        <Stack direction={["column-reverse" , "column-reverse" ,"row" ]} justify="space-between" w={["97%" , "95%"]} m="20px auto" gap={["10px" , "10px" , "0"]} maxW="1100px">
             
             <Box>
                 <Text fontSize="sm" color="GrayText">copyright © 2006-2022 mytheresa.com</Text>

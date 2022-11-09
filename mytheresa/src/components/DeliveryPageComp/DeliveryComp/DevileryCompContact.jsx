@@ -6,9 +6,9 @@ import { BsEnvelopeFill } from "react-icons/bs"
 
 function DevileryCompContact() {
     return (
-        <Box my="20px">
+        <Box m="20px auto" textAlign="center" maxW="1100px">
 
-            <Divider m="auto" w="95%" />
+            <Divider m="auto" w={["95%" , "100%"]} />
 
             <Text fontSize="sm" color="GrayText" mt="20px">
                 You can also place your order via telephone.
@@ -44,7 +44,7 @@ function DevileryCompContact() {
             </Stack>
 
 
-            <Divider m="auto" w="95%"/>
+            <Divider m="auto" w={["95%" , "100%"]}/>
 
         </Box>
     );

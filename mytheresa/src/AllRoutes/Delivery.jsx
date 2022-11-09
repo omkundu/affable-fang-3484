@@ -1,10 +1,9 @@
 import React from 'react';
 import { Box } from "@chakra-ui/react"
-import DeliveryCompHeader from './DeliveryComp/DeliveryCompHeader';
-import DeliveryPaymentBox from './DeliveryComp/DeliveryPaymentBox';
-import DevileryCompContact from './DeliveryComp/DevileryCompContact';
-import DeliveryCopyRight from './DeliveryComp/DeliveryCopyRight';
-import StepsForPayment from './DeliveryComp/UserSteps/StepsForPayment';
+import DeliveryCompHeader from '../components/DeliveryPageComp/DeliveryComp/DeliveryCompHeader';
+import DevileryCompContact from '../components/DeliveryPageComp/DeliveryComp/DevileryCompContact';
+import DeliveryCopyRight from '../components/DeliveryPageComp/DeliveryComp/DeliveryCopyRight';
+import StepsForPayment from '../components/DeliveryPageComp/DeliveryComp/UserSteps/StepsForPayment';
 
 function Delivery() {
 
@@ -12,8 +11,6 @@ function Delivery() {
         <Box>
 
             <DeliveryCompHeader/>
-
-            {/* <DeliveryPaymentBox/> */}
 
             <StepsForPayment/>
             

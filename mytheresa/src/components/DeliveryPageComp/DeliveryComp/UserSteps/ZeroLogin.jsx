@@ -1,11 +1,11 @@
-import { Box, Button, Center, Divider, FormControl, FormLabel, HStack, Icon, Input, InputGroup, InputRightElement, Link, Stack, Text, VStack } from '@chakra-ui/react';
+import { Box, Button, FormControl, HStack, Icon, Input, InputGroup, InputRightElement, Link, Stack, Text} from '@chakra-ui/react';
 import React from 'react';
 import { BsGoogle } from "react-icons/bs";
 import axios from "axios"
 
 //For Google Login
-import { GoogleLogin } from '@react-oauth/google';
-import jwt_decode from "jwt-decode";
+// import { GoogleLogin } from '@react-oauth/google';
+// import jwt_decode from "jwt-decode";
 import { useGoogleLogin } from "@react-oauth/google"
 //.....................
 
@@ -33,7 +33,7 @@ function ZeroLogin({ HandleStep }) {
 
 
     return (
-        <Stack m="30px auto" direction={["column-reverse", "row"]} w="95%" gap={["0", "10px"]}>
+        <Stack m="30px auto" direction={["column-reverse", "row"]} w="95%" gap={["0", "10px"]} maxW="1100px">
 
             <Box w="100%" textAlign={["center", "start"]} borderTop={["1px solid  rgb(237,241,246)", "0"]} pr={["0", "20px", "40px"]} pt={["15px", "0"]}>
                 <Text>YOU ALREADY HAVE A PASSWORD</Text>
