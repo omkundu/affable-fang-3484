@@ -7,7 +7,7 @@ function DeliveryPaymentBox({HandleStep , current}) {
     return (
         <>
 
-            <Box display={["none", "none", "block"]} m="40px auto" maxW="1100px">
+            <Box display={["none", "none", "block"]} m="40px auto" w={["95%" , "90%"]}>
 
                 <HStack justify="space-between" align="center" textAlign="center">
 

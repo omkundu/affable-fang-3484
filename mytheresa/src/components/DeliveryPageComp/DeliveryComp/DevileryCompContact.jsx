@@ -6,7 +6,7 @@ import { BsEnvelopeFill } from "react-icons/bs"
 
 function DevileryCompContact() {
     return (
-        <Box m="20px auto" textAlign="center" maxW="1100px">
+        <Box m="20px auto" textAlign="center" w={["95%" , "90%"]}>
 
             <Divider m="auto" w={["95%" , "100%"]} />
 
