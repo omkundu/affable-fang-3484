@@ -37,7 +37,7 @@ Clone the project
   git clone https://github.com/omkundu/affable-fang-3484
 ```
 
-Go to the project directory
+Go to the project directory 
 
 ```bash
   cd mytheresa
