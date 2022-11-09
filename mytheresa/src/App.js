@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import MainRoutes from './AllRoutes/MainRoutes';
+import { LoginAndRegister } from './Login/LoginAndRegister';
 
 function App() {
   return (
     <div className="App">
     <MainRoutes/>
+    
+   
     </div>
   );
 }
