@@ -44,6 +44,7 @@
           "name": "Floral cutout maxi dress",
           "brandName": "ETRO",
           "price": 3416,
+          "category": "Checked",
           "size": [
               "S",
               "M",
@@ -82,7 +83,7 @@
           "id": 5,
           "name": "Cerna off-shoulder midi dress",
           "brandName": "KHAITE",
-          "category": "Tshirt",
+          "category": "Pants",
           "price": 1560,
           "size": [
               "S",
@@ -123,6 +124,7 @@
           "name": "'90s Pinch high-rise straight jeans",
           "brandName": "KHAITE",
           "price": 290,
+          "category": "Pants",
           "size": [
               "S",
               "M",
@@ -140,8 +142,9 @@
       {
           "id": 8,
           "name": "High-rise straight jeans",
-          "brandName": "",
+          "brandName": "Hite",
           "price": 550,
+          "category": "Pants",
           "size": [
               "S",
               "M",
@@ -161,6 +164,7 @@
           "name": "Piqué jersey striped shorts",
           "brandName": "GUCCI",
           "price": 680,
+          "category": "Shorts",
           "size": [
               "S",
               "M",
@@ -180,6 +184,7 @@
           "name": "Silk faille shorts",
           "brandName": "ALEXANDER MCQUEEN",
           "price": 890,
+          "category": "Shorts",
           "size": [
               "S",
               "M",
@@ -199,6 +204,7 @@
           "name": "Cotton and linen twill shorts",
           "brandName": "GUCCI",
           "price": 290,
+          "category": "Shorts",
           "size": [
               "S",
               "M",
@@ -218,6 +224,7 @@
           "name": "Denim jacket",
           "brandName": "BOTTEGA VENETA",
           "price": 1265,
+          "Pattern": "Checked",
           "size": [
               "S",
               "M",
@@ -256,6 +263,7 @@
           "name": "Printed halterneck minidress",
           "brandName": "BOTTEGA VENETA",
           "price": 995,
+          "Pattern": "Checked",
           "size": [
               "S",
               "M",
@@ -275,6 +283,7 @@
           "name": "Technical knit jacket",
           "brandName": "BOTTEGA VENETA",
           "price": 990,
+          "Pattern": "Checked",
           "size": [
               "S",
               "M",
@@ -313,6 +322,7 @@
           "name": "Floral lace midi dress",
           "brandName": "GUCCI",
           "price": 5029,
+          "category": "Coats",
           "size": [
               "S",
               "M",
@@ -332,6 +342,7 @@
           "name": "Ribbed-knit midi dress",
           "brandName": "GUCCI",
           "price": 1265,
+          "category": "Coats",
           "size": [
               "S",
               "M",
@@ -351,6 +362,7 @@
           "name": "Wool minidress",
           "brandName": "GUCCI",
           "price": 1179,
+          "category": "Coats",
           "size": [
               "S",
               "M",
@@ -370,6 +382,7 @@
           "name": "Horsebit denim minidress",
           "brandName": "GUCCI",
           "price": 1265,
+          "category": "Coats",
           "size": [
               "S",
               "M",
@@ -389,6 +402,7 @@
           "name": "Interlocking G silk twill minidress",
           "brandName": "GUCCI",
           "price": 2355,
+          "category": "Coats",
           "size": [
               "S",
               "M",
@@ -408,6 +422,7 @@
           "name": "Floral silk midi dress",
           "brandName": "GUCCI",
           "price": 1849,
+          "category": "Coats",
           "size": [
               "S",
               "M",
@@ -427,6 +442,7 @@
           "name": "Floral cotton muslin maxi dress",
           "brandName": "GUCCI ",
           "price": 2269,
+          "category": "Coats",
           "size": [
               "S",
               "M",
@@ -446,6 +462,7 @@
           "name": "Tie-neck chiffon minidress",
           "brandName": "GUCCI",
           "price": 2355,
+          "category": "Dresses",
           "size": [
               "S",
               "M",
@@ -465,6 +482,7 @@
           "name": "Wool coat",
           "brandName": "GUCCI",
           "price": 2105,
+          "category": "Dresses",
           "size": [
               "S",
               "M",
@@ -484,6 +502,7 @@
           "name": "GG jacquard denim jacket",
           "brandName": "GUCCI",
           "price": 1555,
+          "category": "Dresses",
           "size": [
               "S",
               "M",
@@ -503,6 +522,7 @@
           "name": "High-neck jersey minidress",
           "brandName": "GUCCI",
           "price": 749,
+          "category": "Dresses",
           "size": [
               "S",
               "M",
@@ -516,7 +536,167 @@
               "img3": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/4a/P00676824_d1.jpg",
               "img4": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/4a/P00676824.jpg"
           }
+      },
+      {
+        "id": 28,
+        "name": "Mini Nash Face cotton T-shirt",
+        "category": "Tshirt",
+        "brandName": "ALEXANDER MCQUEEN",
+        "price": 450,
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "images": {
+            "img1": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/92/P00686241.jpg",
+            "img2": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/92/P00686241_b1.jpg",
+            "img3": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/92/P00686241_d4.jpg",
+            "img4": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/92/P00686241_d3.jpg"
+        }
+    },
+    {
+        "id": 29,
+        "name": "Wool coat",
+        "brandName": "GUCCI",
+        "price": 2105,
+        "category": "Dresses",
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "images": {
+            "img1": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/78/P00694477.jpg",
+            "img2": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/78/P00694477_b1.jpg",
+            "img3": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/78/P00694477_d1.jpg",
+            "img4": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/78/P00694477_b1.jpg"
+        }
+    },
+    {
+        "id": 30,
+        "name": "Floral lace midi dress",
+        "brandName": "GUCCI",
+        "category": "Dresses",
+        "price": 5029,
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "images": {
+            "img1": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/97/P00614271.jpg",
+            "img2": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/af/P00657413_b1.jpg",
+            "img3": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/af/P00657413_d1.jpg",
+            "img4": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/af/P00657413_d2.jpg"
+        }
+    },
+    {
+        "id": 31,
+        "name": "GG jacquard denim jacket",
+        "brandName": "GUCCI",
+        "price": 1555,
+        "category": "Jacket",
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "images": {
+            "img1": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/d6/P00614022.jpg",
+            "img2": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/d6/P00614022_b1.jpg",
+            "img3": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/d6/P00614022_d1.jpg",
+            "img4": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/d6/P00614022_d3.jpg"
+        }
+    },
+    {
+        "id": 32,
+        "name": "GG cotton canvas down vest",
+        "brandName": "GUCCI",
+        "price": 1665,
+        "category": "Jacket",
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "images": {
+            "img1": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/89/P00746209.jpg",
+            "img2": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/89/P00746209_b1.jpg",
+            "img3": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/89/P00746209_b2.jpg",
+            "img4": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/89/P00746209_d2.jpg"
+        }
+    },
+    {
+      "id": 33,
+      "name": "Mini Nash Face cotton T-shirt",
+      "category": "Jacket",
+      "brandName": "Nylon puffer jacket",
+      "price": 455,
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "images": {
+          "img1": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/76/P00732338.jpg",
+          "img2": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/76/P00732338_b1.jpg",
+          "img3": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/76/P00732338_b2.jpg",
+          "img4": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/76/P00732338_d1.jpg"
       }
+  },
+  {
+      "id": 34,
+      "name": "Padded vest",
+      "brandName": "GOLDBERGH",
+      "price": 425,
+      "category": "Jacket",
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "images": {
+          "img1": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/c6/P00739976.jpg",
+          "img2": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/c6/P00739976_b1.jpg",
+          "img3": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/c6/P00739976_d1.jpg",
+          "img4": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/c6/P00739976_d2.jpg"
+      }
+  },
+  {
+      "id": 35,
+      "name": "Faux fur-trimmed vest",
+      "brandName": "GOLDBERGH",
+      "category": "Jacket",
+      "price": 339,
+      "size": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+      ],
+      "images": {
+          "img1": "https://img.mytheresa.com/2176/2176/90/jpeg/catalog/product/66/P00739990.jpg",
+          "img2": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/66/P00739990_b1.jpg",
+          "img3": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/66/P00739990_d1.jpg",
+          "img4": "https://img.mytheresa.com/258/258/33/jpeg/catalog/product/66/P00739990_d2.jpg"
+      }
+  }
   ],
   "mendata": [
       {

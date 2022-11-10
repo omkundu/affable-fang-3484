@@ -10,28 +10,10 @@ const WomenCard = ({ item ,productData }) => {
     <div className='single-product' style={{paddingBottom:"100px"}}>
       <Link to={`/WomenProducts/${productData.id}`}>
       <div className='img-box'>
-        <div> 
-          {/* <img style={{height:"37px", 
-           width:"37px", 
-           display:"flex",
-           marginLeft:"-30px", 
-           marginTop:"5px", 
-           position:"absolute" 
-        }} src={item.discountimgLink} alt="img" /> */}
-
-       <p style={{height:"35px", 
-       width:"35px", 
-       position:"absolute",
-       fontSize:"11px",
-       color:"white",
-       marginLeft:"-30px",
-       marginTop:"7px",
-       fontWeight:"600" 
-  
-  }}>{item.discount}% OFF</p> </div>
+        
   
       <div> 
-         <img className='product-img' style={{height:"120px", width:"120px" }} src={item.images.img1} alt="img" />
+         <img className='product-img' style={{height:"250px", width:"200px" }} src={item.images.img1} alt="img" />
       </div>
        
       </div>

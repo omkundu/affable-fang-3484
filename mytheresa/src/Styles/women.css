@@ -1,9 +1,3 @@
-/* .groceries-container{
-    width: 100%;
-    height: auto;
-    margin-top: 9.5%;
-    background-color: whitesmoke;
-} */
 
 .top-Section{
     width: 98%;
@@ -56,8 +50,9 @@
     height: auto;
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    border: 1px solid red;
 }
 
 .heading{
@@ -65,7 +60,7 @@
 }
 
 .single-product{
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     border: 1px solid #d3d3d3;
     text-align: center;
@@ -83,6 +78,9 @@
     width: 95%;
     margin: auto;
     font-size: 0.8rem;
+    /* border: 1px solid red; */
+    /* margin-top: 50px; */
+    padding-top: 50px;
 }
 .mrp-box{
     height: 20%;
@@ -125,10 +123,11 @@
 
 .right-sorting-container{
     height: 50px;
-    margin-top: 10px;
+    margin-top: -240px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
 }
 .right-sorting-container p {
     padding-top: 1.6%;
@@ -153,6 +152,12 @@
     padding: 2%;
     text-align: center;
 }
+.price{
+    font-size: 1rem;
+    width: 90%;
+    font-weight: 600;
+    /* color: red; */
+}
 
 @media screen and (max-width: 640px) {
     .middle-section{
@@ -172,11 +177,12 @@
     .price{
         font-size: 0.8rem;
         width: 90%;
+        font-weight: 600;
     }
 
     .right-sorting-container{
         height: 100px;
-        margin-top: 5px;
+        margin-top: -200px;
         margin-bottom: 5px;
         display: flex;
         flex-direction: column;
@@ -224,4 +230,15 @@
 
 .categories-cntr p {
     padding: 4%;
+}
+
+@media screen and (max-width: 413px) {
+    .middle-section{
+        width: 95%;
+        height: auto;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
 }

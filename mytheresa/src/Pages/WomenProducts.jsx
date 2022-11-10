@@ -4,13 +4,13 @@ import WomenCard from "../Components/WomenCard";
 import { Pagination } from "../Components/Pagination";
 import { Button } from '@chakra-ui/react'
 
-import { getWomensProducts } from "../Redux/Mobile/action";
+import { getWomensProducts } from "../Redux/Women/action";
 // import "../Styles/women.css";
 import WomenFilter from "../Components/WomenFilter";
 import { useLocation, useSearchParams } from "react-router-dom";
 
 const WomenProducts = () => {
-  const womensdata = useSelector((state) => state.MobileReducer.womensdata);
+  const womensdata = useSelector((state) => state.WomenReducer.womensdata);
   const dispatch = useDispatch();
   const [page, setPage] = useState(1);
   const [searchParams] = useSearchParams();
@@ -19,6 +19,21 @@ const WomenProducts = () => {
   const handlePageChange = (change) => {
     setPage((prev) => prev + change);
   };
+
+  // var data112 = require("../Components/product.json");
+  // const [products, setProducts] = useState(data112.womensdata)
+
+
+  // const handlechange = (e) => {
+  //   if (e.target.value == "low-to-high") {
+  //     setProducts((product) => [...products.sort((a, b) => (a.price - b.price))])
+  //   }
+  //   else if (e.target.value == "high-to-low") {
+  //     setProducts((product) => [...products.sort((a, b) => (b.price - a.price))])
+  //   }
+
+  // }
+  // // console.table(products);
 
   useEffect(() => {
     if(location || womensdata.length === 0){
@@ -52,7 +67,7 @@ const WomenProducts = () => {
             </div>
             <div className="categories-cntr">
                <p>Categories</p>
-               {/* <WomenFilter /> */}
+               <WomenFilter />
             </div>
           </div>
         </div>
@@ -63,10 +78,18 @@ const WomenProducts = () => {
           </div>
     {/* Sorting section Start */}
           <div className="right-sorting-container">
-            <p> Showing <b>20</b> of <b>64</b> items </p>
+            <p> 423 products </p>
             <div className="sort-box">
-                <p>Sort by:</p>
-                {/* <Button colorScheme='teal' variant='outline' onClick={() => handleSortBy("title", "asc")} > Popularity </Button>
+               {/* start sorting code */}
+             
+               <select>
+                <option>Sort-By</option>
+                <option onClick={() => handleSortBy("price", "asc")} >Price-Low To High</option>
+                <option onClick={() => handleSortBy("price", "desc")}>Price-High To Low</option>
+            </select>
+
+                {/* <p>Sort by:</p>
+                <Button colorScheme='teal' variant='outline' onClick={() => handleSortBy("title", "asc")} > Popularity </Button>
                 <Button colorScheme='teal' variant='outline' onClick={() => handleSortBy("price", "desc")} > High to Low </Button>
                 <Button colorScheme='teal' variant='outline' onClick={() => handleSortBy("price", "asc")} >  Low to High </Button>
                 <Button colorScheme='teal' variant='outline' onClick={() => handleSortBy("discount", "desc")} >  Discount </Button>
