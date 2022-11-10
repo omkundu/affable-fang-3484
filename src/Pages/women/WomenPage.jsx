@@ -1,13 +1,16 @@
 import React from "react"
 import "./WomenPage.css"
+
 import { BottomNav } from "../../Components/Navbar/BottomNav"
 import "../../Components/Navbar/BottomNav.css"
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { Women } from "../../Components/Navbar/NavData"
+
 import { Link } from "react-router-dom";
 // import { useMediaQuery } from 'react-responsive'
 
 export const WomenPage = () => {
+
 
   return (<>
     <Navbar data={Women} />
@@ -194,3 +197,6 @@ export const WomenPage = () => {
   </>
   )
 }
+
+
+export default WomenPage
