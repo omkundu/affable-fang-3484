@@ -1,27 +1,26 @@
-
+import React from "react"
 import "./WomenPage.css"
-import "../../components/Navbar/BottomNav.css"
-// import { Navbar } from "../../components/Navbar/Navbar";
-  import { BottomNav } from "../../components/Navbar/BottomNav"
- import { Women } from "../../components/Navbar/NavData"
+import { BottomNav } from "../../Components/Navbar/BottomNav"
+import "../../Components/Navbar/BottomNav.css"
+import { Navbar } from "../../Components/Navbar/Navbar";
+import { Women } from "../../Components/Navbar/NavData"
 import { Link } from "react-router-dom";
 // import { useMediaQuery } from 'react-responsive'
 
 export const WomenPage = () => {
 
-   const data = Women;
   return (<>
-  {/* <Navbar data={data}/> */}
-    {/* <BottomNav data={data} /> */}
+    <Navbar data={Women} />
+    {/* <BottomNav data={Women} /> */}
     <div className="container">
       <div className="main_img">
         <Link to="/womenproducts">
-        <br></br>
+          <br></br>
           <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/ODLR_Big_DSK_2x_20221028110114.jpg?imwidth=1180&imdensity=1" alt="women-img" />
-          
-         <div>
-        
-         </div>
+
+          <div>
+
+          </div>
         </Link>
       </div>
       <div className="banner">
@@ -52,14 +51,14 @@ export const WomenPage = () => {
             <button className="btn-shop">SHOP NOW</button></Link>
           <hr></hr>
           <h4 className="ha4">FAMILY FESTIVITIES</h4>
-          <h1 className="ha1">Embrace festive family<br/> moments</h1>
+          <h1 className="ha1">Embrace festive family<br /> moments</h1>
           <br />
           <br />
           <img src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW45/Festive-Nov_ActboxSmall_Family_2x_20221107113245.jpg?imwidth=600&imdensity=1" alt="" />
           <br />
           <Link to="/womenproducts">
             <button className="btn">SHOP NOW</button></Link>
-            
+
         </div>
       </div>
       <br></br>
@@ -74,11 +73,11 @@ export const WomenPage = () => {
           <br />
           <Link to="/womenproducts">
             <button className="btn">SHOP NOW</button></Link>
-            <br></br>
+          <br></br>
           <hr></hr>
           <br></br>
           <h4 className="ha4">THE IT-BAG EDIT</h4>
-          <h1 className="ha1">New styles to add to your <br/>collection
+          <h1 className="ha1">New styles to add to your <br />collection
           </h1>
           <br />
           <br />
@@ -131,18 +130,18 @@ export const WomenPage = () => {
         {/* <h2>Mytheresa – Men’s luxury and designer fashion</h2>
           <p>Mytheresa has organized a collection of designer menswear items to keep every man looking his best. Each item in our menswear assortment has been curated and edited by leading experts in men’s fashion. By simply browsing our website, you will discover a luxury shopping experience and find all you need to help you achieve a distinct, well-refined look. We offer fast, worldwide shipping to 130 countries within 72 hours on everything. From the most beloved luxury fashion brands for men, to our highly sought after exclusive menswear designer collaborations – Mytheresa’s tailored edit is suited to stylish men worldwide.</p>
           <p>Amongst our daily New Arrivals, you will uncover the freshest trends straight off the runway. With Mytheresa’s assortment of designer clothes you are guaranteed to look distinguished and build a sophisticated closet that serves your preferred lifestyle. Discover sharp suiting options by Ermenegildo Zegna for work or opt for an elevated off-duty item from Polo Ralph Lauren. Put your best foot forward in men’s designer shoes from esteemed labels like Prada and Saint Laurent. Not forgetting the perfect finishing touch with classic accessories for men, such as a luxury watch, a classic Burberry scarf or a statement tie. Our buyers have put together the finest selection of iconic styles to help maintain your reputation as a dashing gentleman. A helping hand, our team have carefully selected the perfect designer bags to complete your everyday look.</p> */}
-        <section class="text_below">
-        <br></br>
+        <section className="text_below">
+          <br></br>
           <h2 className="ha2">MYTHERESA – WOMEN’S LUXURY AND DESIGNER FASHION
           </h2>
           <br></br>
           <p className="p-tag">
-          Mytheresa is the most-trusted source for finding the finest selection of luxurious womenswear. Our expert buying team travels the globe with a simple mission: to bring international fashion’s finest directly to your doorstep. With our runway-fresh new arrivals every week, an easy-to-navigate platform and a mobile app to shop on-the-go, we ensure a boutique-like feeling for a unique shopping experience.
+            Mytheresa is the most-trusted source for finding the finest selection of luxurious womenswear. Our expert buying team travels the globe with a simple mission: to bring international fashion’s finest directly to your doorstep. With our runway-fresh new arrivals every week, an easy-to-navigate platform and a mobile app to shop on-the-go, we ensure a boutique-like feeling for a unique shopping experience.
           </p>
           <br></br>
 
-          <div class="exp_quality">
-            <div class="exp">
+          <div className="exp_quality">
+            <div className="exp">
               <h5 className="p-tag">A LUXURY SHOPPING EXPERIENCE</h5>
               <ul>
                 <li>
@@ -159,7 +158,7 @@ export const WomenPage = () => {
                 </li>
               </ul>
             </div>
-            <div class="quality">
+            <div className="quality">
               <p className="p-tag">SERVICE AND QUALITY</p>
               <ul>
                 <li>Authentic products guaranteed</li>
@@ -177,15 +176,15 @@ export const WomenPage = () => {
           </div>
           <br></br>
           <p className="p-tag">
-          Whether you are looking for the latest Bottega Veneta pouch for everyday wear, Jimmy Choo heels for an upcoming wedding, or a Burberry scarf to gift a friend, our edit comprises the key pieces that you need for an elegant season ahead. With our assortment of timeless items and exclusive capsule collections, which includes everything from the understated luxury of Loro Piana and avant-garde appeal of Maison Margiela, to Saint Laurent bags and time-honored Gucci loafers; you are certain to find everything you want to build your dream closet.
+            Whether you are looking for the latest Bottega Veneta pouch for everyday wear, Jimmy Choo heels for an upcoming wedding, or a Burberry scarf to gift a friend, our edit comprises the key pieces that you need for an elegant season ahead. With our assortment of timeless items and exclusive capsule collections, which includes everything from the understated luxury of Loro Piana and avant-garde appeal of Maison Margiela, to Saint Laurent bags and time-honored Gucci loafers; you are certain to find everything you want to build your dream closet.
           </p>
           <br></br>
           <p className="p-tag">
-          Get inspired by our coveted edit, which makes occasion dressing easy by breaking down our buy into easy-to-shop categories such as fashion sneakers or exquisite gowns. Delve into our exclusive selection of designer must-haves. Our exceptional customer service team is here to help you through every step of the order process, and beyond, to make sure you start every day dressed to conquer.
+            Get inspired by our coveted edit, which makes occasion dressing easy by breaking down our buy into easy-to-shop categories such as fashion sneakers or exquisite gowns. Delve into our exclusive selection of designer must-haves. Our exceptional customer service team is here to help you through every step of the order process, and beyond, to make sure you start every day dressed to conquer.
           </p>
           <br></br>
           <p className="p-tag">
-          Shop with us and discover why Mytheresa is your final destination for online shopping for women.
+            Shop with us and discover why Mytheresa is your final destination for online shopping for women.
           </p>
           <br></br>
         </section>

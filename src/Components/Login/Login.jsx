@@ -1,15 +1,20 @@
 
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Login.css"
 
-const initData=[{email:"",password:""}]
+const initData = [{ email: "", password: "" }]
 
 export const Login = () => {
+
+    //For check from where user trys to visit
+    const location = useLocation()
+    // console.log(location)
+
+
     const navigate = useNavigate();
 
     const handleChange = (e) => {
-        const [formdata, setFormdata] =(initData);
+        const [formdata, setFormdata] = (initData);
 
 
         setFormdata({ ...formdata, [e.target.name]: e.target.value })
@@ -18,7 +23,7 @@ export const Login = () => {
     const handleLogin = (e) => {
 
         e.preventDefault();
-        
+
         navigate("/")
     }
 
