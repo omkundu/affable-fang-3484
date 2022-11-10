@@ -5,7 +5,7 @@ import Delivery from './Delivery'
 const MainRoutes = () => {
   return (
     <Routes>
-      <Route path='/' element={<Delivery/>} />
+      <Route path='/delivery' element={<Delivery/>} />
     </Routes>
   )
 }

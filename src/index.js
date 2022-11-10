@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-// import { store } from "../src/Redux/store";
-// import { Provider } from "react-redux";
+import { store } from "../src/Redux/store";
+import { Provider } from "react-redux";
 
 
 //Login With Google
@@ -19,9 +19,9 @@ root.render(
   <GoogleOAuthProvider clientId={ClientID}> 
     <BrowserRouter>
       <ChakraProvider>
-        {/* <Provider store={store}> */}
+        <Provider store={store}>
         <App />
-        {/* </Provider> */}
+        </Provider>
       </ChakraProvider>
     </BrowserRouter>
   </GoogleOAuthProvider>
