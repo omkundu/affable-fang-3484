@@ -1,15 +1,14 @@
 
 import "./WomenPage.css"
-import "../../components/Navbar/BottomNav.css"
+// import "../../components/Navbar/BottomNav.css"
 // import { Navbar } from "../../components/Navbar/Navbar";
-  import { BottomNav } from "../../components/Navbar/BottomNav"
- import { Women } from "../../components/Navbar/NavData"
+  // import { BottomNav } from "../../components/Navbar/BottomNav"
+//  import { Women } from "../../components/Navbar/NavData"
 import { Link } from "react-router-dom";
 // import { useMediaQuery } from 'react-responsive'
+const WomenPage = () => {
 
-export const WomenPage = () => {
-
-   const data = Women;
+  //  const data = Women;
   return (<>
   {/* <Navbar data={data}/> */}
     {/* <BottomNav data={data} /> */}
@@ -195,3 +194,6 @@ export const WomenPage = () => {
   </>
   )
 }
+
+
+export default WomenPage
