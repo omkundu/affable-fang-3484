@@ -1,10 +1,10 @@
 import React from "react"
 import "./WomenPage.css"
 
-import { BottomNav } from "../../Components/Navbar/BottomNav"
-import "../../Components/Navbar/BottomNav.css"
-import { Navbar } from "../../Components/Navbar/Navbar";
-import { Women } from "../../Components/Navbar/NavData"
+import { BottomNav } from "../../components/Navbar/BottomNav"
+import "../../components/Navbar/BottomNav.css"
+import { Navbar } from "../../components/Navbar/Navbar";
+import { Women } from "../../components/Navbar/NavData"
 
 import { Link } from "react-router-dom";
 // import { useMediaQuery } from 'react-responsive'
@@ -14,7 +14,7 @@ export const WomenPage = () => {
 
   return (<>
     <Navbar data={Women} />
-    {/* <BottomNav data={Women} /> */}
+    <BottomNav data={Women} />
     <div className="container">
       <div className="main_img">
         <Link to="/womenproducts">

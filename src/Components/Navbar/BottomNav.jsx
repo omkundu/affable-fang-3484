@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 
 export const BottomNav = ({ data }) => {
-    const cart = useSelector((store) => store.cart)
+    const cart = useSelector((store) => store.cart) || []
     const option = data
 
     const [search, setSearch] = useState(false);
