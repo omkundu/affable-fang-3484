@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
+import { Footer } from "../Login/Footer";
 import './Login.css'
 
 export const Register = () => {
@@ -23,6 +24,7 @@ export const Register = () => {
 
 
     return (
+        <>
         <form onSubmit={handleSubmit}>
             <p className="Heading">CREATE AN ACCOUNT</p>
             <p>Please enter the following information to create your account.</p>
@@ -59,5 +61,9 @@ export const Register = () => {
             <p>* required fields</p>
             <input className="Registerbtn" type="submit" value={"REGISTER"} />
         </form>
+        <div style={{width:"250%",marginTop:"4rem"}}>
+         <Footer />
+        </div>
+        </>
     )
 }

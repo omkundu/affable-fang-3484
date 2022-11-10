@@ -1,6 +1,7 @@
 import { Login } from "./Login"
 import "./Login.css"
 import { Register } from "./Register"
+
 export const LoginAndRegister = () => {
     return (
         <div className="Main">
@@ -8,6 +9,7 @@ export const LoginAndRegister = () => {
             <div><Register /></div>
             
             <div><Login /></div>
+           
             
         </div>
     )
