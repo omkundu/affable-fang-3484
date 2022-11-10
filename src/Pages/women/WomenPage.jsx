@@ -14,7 +14,7 @@ export const WomenPage = () => {
 
   return (<>
     <Navbar data={Women} />
-    {/* <BottomNav data={Women} /> */}
+    <BottomNav data={Women} />
     <div className="container">
       <div className="main_img">
         <Link to="/womenproducts">
