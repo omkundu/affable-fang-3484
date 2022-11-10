@@ -17,12 +17,15 @@
 .Main>div {
     padding: 50px;
     width: 50%;
+    /* border: 2px solid teal; */
+    height: 750px;
  
 }
 
-.Main>div:first-child {  
+/* .Main>div:first-child {  
     border-right: 1px solid grey;
-}
+    
+} */
 
 
 .Input {
@@ -69,5 +72,6 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         width:200%;
+    
     }
     } 
