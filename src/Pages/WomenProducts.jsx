@@ -52,7 +52,7 @@ const WomenProducts = () => {
             </div>
             <div className="categories-cntr">
                <p>Categories</p>
-               {/* <WomenFilter /> */}
+               <WomenFilter />
             </div>
           </div>
         </div>

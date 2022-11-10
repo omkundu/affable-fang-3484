@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-// import "../Styles/Filters.css";
+import "../Styles/Filters.css";
 
 // abhi isko side me rakhte ha
 
@@ -9,8 +9,8 @@ const WomenFilter = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const initialCategoryFilter = searchParams.getAll("category");
     const [category, setCategory] = useState( initialCategoryFilter || []);
-    const initialBrandFilter = searchParams.getAll("brand");
-    const [brand, setBrand] = useState( initialBrandFilter || []);
+    const initialBrandFilter = searchParams.getAll("Pattern");
+    const [Pattern, setPattern] = useState( initialBrandFilter || []);
 
     const handleFilterCheckbox = (e) => {
         const newCategory = [...category]
@@ -28,110 +28,79 @@ const WomenFilter = () => {
     }
 
     const handleBrandFilter = (e) => {
-        const newCategory = [...brand]
+        const newCategory = [...Pattern]
         if(newCategory.includes(e.target.value)){
             newCategory.splice(newCategory.indexOf(e.target.value), 1)
-            setBrand(newCategory)
+            setPattern(newCategory)
         }
         else{
             newCategory.push(e.target.value)
-            setBrand(newCategory)
+            setPattern(newCategory)
         }
     }
 
        useEffect(()=> {
-        if(category || brand){
+        if(category || Pattern){
             let params = {};
             category && (params.category = category);
-            brand && (params.brand = brand);
+            Pattern && (params.Pattern = Pattern);
             setSearchParams(params)
         }
-       }, [category,brand, setSearchParams])
+       }, [category,Pattern, setSearchParams])
 
   return (
     <div className='filter-parent'>
         <div className='categories-parent'>
             <div className='filter-option'>
-                <input className='checkbox' checked={category.includes('watch')} value="watch" type="checkbox" onChange={handleFilterCheckbox}/>
-                <label> Watch </label>
+                <input className='checkbox' checked={category.includes('Tshirt')} value="Tshirt" type="checkbox" onChange={handleFilterCheckbox}/>
+                <label> T-shirt </label>
             </div>
             <div className='filter-option'>
-                <input checked={category.includes('mobile')} value="mobile" type="checkbox" onChange={handleFilterCheckbox}/>
-                <label> Mobile  </label>
+                <input checked={category.includes('Pants')} value="Pants" type="checkbox" onChange={handleFilterCheckbox}/>
+                <label> Pants  </label>
             </div>
             <div className='filter-option'>
-                <input checked={category.includes('powerbank')} value="powerbank" type="checkbox" onChange={handleFilterCheckbox}/>
-                <label> Power Bank </label>
+                <input checked={category.includes('Shorts')} value="Shorts" type="checkbox" onChange={handleFilterCheckbox}/>
+                <label> Shorts </label>
             </div>
             <div className='filter-option'>
-                <input checked={category.includes('Smartwatch')} value="Smartwatch" type="checkbox" onChange={handleFilterCheckbox}/>
-                <label> Smart Watch </label>
+                <input checked={category.includes('Jacket')} value="Jacket" type="checkbox" onChange={handleFilterCheckbox}/>
+                <label> Jacket </label>
             </div>
             <div className='filter-option'>
-                <input checked={category.includes('mobile')} value="mobile" type="checkbox" onChange={handleFilterCheckbox}/>
-                <label> Smart Phone </label>
+                <input checked={category.includes('Dresses')} value="Dresses" type="checkbox" onChange={handleFilterCheckbox}/>
+                <label> Dresses </label>
             </div>
             <div className='filter-option'>
-                <input checked={category.includes('watch')} value="watch" type="checkbox" onChange={handleFilterCheckbox}/>
-                <label> smart Watches </label>
+                <input checked={category.includes('Coats')} value="Coats" type="checkbox" onChange={handleFilterCheckbox}/>
+                <label> Coats </label>
             </div>
-            <div className='filter-option'>
-                <input checked={category.includes('mobile')} value="mobile" type="checkbox" onChange={handleFilterCheckbox}/>
-                <label> Smart Gadgets </label>
-            </div>
-            <div className='filter-option'>
-                <input checked={category.includes('mobile')} value="mobile" type="checkbox" onChange={handleFilterCheckbox}/>
-                <label> New Mobile </label>
-            </div>
-           
+ 
         </div>
         <div className='filter-Brand'>
-            <p>Brand</p>
+            <p>Pattern</p>
             <div className='brand-box'>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('Xiaomi')} value="Xiaomi" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> Xiaomi </label>
+                    <input className='checkbox' checked={Pattern.includes('Checked')} value="Checked" type="checkbox" onChange={handleBrandFilter}/>
+                    <label> Checked </label>
                 </div>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('STORM')} value="STORM" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> STORM </label>
+                    <input className='checkbox' checked={Pattern.includes('STORM')} value="STORM" type="checkbox" onChange={handleBrandFilter}/>
+                    <label> M </label>
                 </div>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('TXOR')} value="TXOR" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> TXOR </label>
+                    <input className='checkbox' checked={Pattern.includes('TXOR')} value="TXOR" type="checkbox" onChange={handleBrandFilter}/>
+                    <label> L </label>
                 </div>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('apple')} value="apple" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> apple </label>
+                    <input className='checkbox' checked={Pattern.includes('apple')} value="apple" type="checkbox" onChange={handleBrandFilter}/>
+                    <label> XL </label>
                 </div>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('Wingfi')} value="Wingfi" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> Wingfi </label>
+                    <input className='checkbox' checked={Pattern.includes('Wingfi')} value="Wingfi" type="checkbox" onChange={handleBrandFilter}/>
+                    <label> XXL </label>
                 </div>
-                <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('oneplus')} value="oneplus" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> oneplus </label>
-                </div>
-                <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('vivo')} value="vivo" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> vivo </label>
-                </div>
-                <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('Motorola')} value="Motorola" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> Motorola </label>
-                </div>
-                <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('tecno')} value="tecno" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> tecno </label>
-                </div>
-                <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('samsung')} value="samsung" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> samsung </label>
-                </div>
-                <div className='filter-option'>
-                    <input className='checkbox' checked={brand.includes('redmi')} value="redmi" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> redmi </label>
-                </div>
+               
                 
             </div>
         </div>
