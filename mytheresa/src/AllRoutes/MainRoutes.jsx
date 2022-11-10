@@ -1,3 +1,17 @@
+import React from 'react'
+import WomenProducts from '../Pages/WomenProducts'
+
+const MainRoutes = () => {
+  return (
+    <div>
+      MainRoutes
+      
+      <WomenProducts />
+    </div>
+  )
+}
+
+export default MainRoutes
 
  import React from 'react'
  import { Route, Routes, Link } from 'react-router-dom';
@@ -26,5 +40,6 @@ const MainRoutes = () => {
   
   )
  }
+
 
 
