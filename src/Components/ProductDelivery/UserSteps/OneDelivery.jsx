@@ -1,7 +1,7 @@
 import { Box, Button, FormControl, HStack, Icon, Img, Input, Radio, RadioGroup, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { BsFillInfoCircleFill } from "react-icons/bs";
-import { BoxIMG1, BoxIMG2 } from "../../../../image/PaymentPageIMG"
+import { BoxIMG1, BoxIMG2 } from "../../../image/PaymentPageIMG"
 
 
 function OneDelivery(props) {

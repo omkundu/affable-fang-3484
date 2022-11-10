@@ -4,10 +4,10 @@ import { Routes, Route } from "react-router-dom"
 // import { Login } from '../Components/Login/Login';
 import  {LoginAndRegister} from "../Components/Login/LoginAndRegister"
 
-import { Login } from '../components/Login/Login';
+import { Login } from '../Components/Login/Login';
 
 import { WomenPage } from '../Pages/women/WomenPage';
-import Delivery from './Delivery'
+import Delivery from "../Pages/Delivery"
 
 import PrivateRoute from './PrivateRoutes/PrivateRoute';
 
@@ -18,9 +18,6 @@ function MainRoutes() {
       <Route path='/' element={
           <WomenPage />
       } />
-
-      <Route path='/login' element={<LoginAndRegister/>} />
-      <Route path='/delivery' element={""} />
 
       <Route path='/login' element={<Login/>} />
       <Route path='/delivery' element={<Delivery/>} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider, Image, Link, Stack} from "@chakra-ui/react"
-import { HeaderIMG } from "../../../image/PaymentPageIMG";
+import { HeaderIMG } from "../../image/PaymentPageIMG";
 
 
 function DeliveryCompHeader() {
