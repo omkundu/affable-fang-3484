@@ -6,7 +6,7 @@ export const TopNav = () => {
         <div className='TopNav'>
             <div className="TopLeft">
                 <ul>
-                    <li><Link to="/">WOMEN</Link></li>
+                    <li><Link to="/women">WOMEN</Link></li>
                     <li><Link to="/men">MEN</Link></li>
                     <li><Link to="/">KIDS</Link></li>
                 </ul>

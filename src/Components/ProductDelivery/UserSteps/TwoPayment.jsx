@@ -3,7 +3,8 @@ import React from 'react';
 import { Stack, Icon } from "@chakra-ui/react"
 import { BsFillCreditCard2FrontFill, BsPaypal } from "react-icons/bs";
 
-function TwoPayment(props) {
+function TwoPayment({HandleStep}) {
+
     return (
 
         <>
@@ -71,7 +72,7 @@ function TwoPayment(props) {
                         <Stack direction="row" align="center" justify="start">
                             <Box position="relative" top="2px">
                                 <Radio size='sm' colorScheme='red' value="2">
-                                    <Icon as={BsPaypal} color="black" fontSize="35px" mx="2px" />
+                                    <Icon as={BsPaypal} color="black" fontSize="35px" mx="2px" /> 
                                 </Radio>
                             </Box>
                             <Box>
@@ -87,8 +88,8 @@ function TwoPayment(props) {
             </Stack >
 
             <Stack direction={["column-reverse", "row"]} justify={["center", "space-between"]} w={["95%", "90%"]} gap={["0", "10px"]} m="auto">
-                <Button colorScheme="gray" variant="solid" size="xs" borderRadius={0} px="15px" w="max-content">BACK TO SHOPPING BAG</Button>
-                <Button color="white" background="black" _hover={{ background: "rgb(49,49,49)" }} size="xs" borderRadius={0} px="15px" w="max-content">PROCEED TO CHECKOUT</Button>
+                <Button colorScheme="gray" variant="solid" size="xs" borderRadius={0} px="15px" w="max-content" onClick={()=>HandleStep(2)}>BACK TO CONFIRM</Button>
+                <Button color="white" background="black" _hover={{ background: "rgb(49,49,49)" }} size="xs" borderRadius={0} px="15px" w="max-content">PROCEED TO PAY</Button>
             </Stack>
 
         </>

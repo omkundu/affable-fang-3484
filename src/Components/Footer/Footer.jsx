@@ -48,9 +48,9 @@ export const Footer = () => {
                 <p className="heading"> GET TREND UPDATES, STYLE TIPS AND MORE </p>
                 <input type="email" placeholder="your email address here.... " />
                 <button className="Footerbtn" > SIGN UP </button>
-                <p>Wish List </p>
+                <p className="text">Wish List </p>
                 <p className="li2 text" >Receive personal notifications </p>
-                <p>Follow us on </p>
+                <p className="text">Follow us on </p>
 
                 <div className="media" >
                     <BsLinkedin />
@@ -66,8 +66,10 @@ export const Footer = () => {
                 </div>
 
             </div>
+          
         </div>
-
+         <br></br>
+         <hr></hr>
     </>
 
     )
