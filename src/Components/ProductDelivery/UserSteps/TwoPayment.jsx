@@ -2,8 +2,28 @@ import { Box, Button, FormControl, FormLabel, HStack, Input, Radio, RadioGroup, 
 import React from 'react';
 import { Stack, Icon } from "@chakra-ui/react"
 import { BsFillCreditCard2FrontFill, BsPaypal } from "react-icons/bs";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import axios from "axios"
 
 function TwoPayment({HandleStep}) {
+
+
+    const HandlePay = () => {
+        axios.post("http://localhost:1100/checkout-session", {
+            items: [
+                { id: 1, quantity: 3 },
+                { id: 2, quantity: 2 },
+            ]
+        })
+            .then(res => {
+                console.log(res)
+                window.location.replace(res.data.url)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }
+
 
     return (
 
@@ -76,9 +96,12 @@ function TwoPayment({HandleStep}) {
                                 </Radio>
                             </Box>
                             <Box>
-                                <Text fontSize="md" fontWeight="bold">
-                                    PayPal
-                                </Text>
+                                {/* <Text fontSize="md" fontWeight="bold"> */}
+                                    {/* PayPal */}
+                                    <PayPalScriptProvider options={{ "client-id": "test" }}>
+                                    <PayPalButtons style={{ layout: "horizontal" }} />
+                                </PayPalScriptProvider>
+                                {/* </Text> */}
                             </Box>
                         </Stack>
                         <Text fontSize="sm" ml="20px">Immediate Shipping</Text>
@@ -89,7 +112,7 @@ function TwoPayment({HandleStep}) {
 
             <Stack direction={["column-reverse", "row"]} justify={["center", "space-between"]} w={["95%", "90%"]} gap={["0", "10px"]} m="auto">
                 <Button colorScheme="gray" variant="solid" size="xs" borderRadius={0} px="15px" w="max-content" onClick={()=>HandleStep(2)}>BACK TO CONFIRM</Button>
-                <Button color="white" background="black" _hover={{ background: "rgb(49,49,49)" }} size="xs" borderRadius={0} px="15px" w="max-content">PROCEED TO PAY</Button>
+                <Button color="white" background="black" _hover={{ background: "rgb(49,49,49)" }} size="xs" borderRadius={0} px="15px" w="max-content" onClick={HandlePay}>PROCEED TO PAY</Button>
             </Stack>
 
         </>
