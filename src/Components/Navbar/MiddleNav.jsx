@@ -7,12 +7,12 @@ export const MiddleNav = () => {
         <div className='MiddleNav'>
             <div className="MiddleNavLogo">
                 <Link to="/">
-                    <img src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220420T172422" />
+                    <img src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220420T172422" alt='' />
                 </Link>
             </div>
             <div className='Cart'>
                 <Link to="/cart">
-                    <span>SHOPPING BAG</span>
+                    <span className='Cart'>SHOPPING BAG</span>
                     <span className='CartIcon'>{ cart }</span>
                 </Link>
 

@@ -6,6 +6,7 @@
     margin: auto;
     background-color: white;
     border: solid 1px #EFEFEF;
+    z-index: 1;
 }
 
 .Dropdown a {
