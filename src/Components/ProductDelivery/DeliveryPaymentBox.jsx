@@ -29,12 +29,12 @@ function DeliveryPaymentBox({HandleStep , current}) {
                     </Box>
 
                     <Box w="100%" onClick={()=>HandleStep(2)} cursor="pointer">
-                        <Text fontSize="sm" mb="5px" color={current === 2?"black":"GrayText"}>PAYMENT</Text>
+                        <Text fontSize="sm" mb="5px" color={current === 2?"black":"GrayText"}>CONFIRM</Text>
                         <Box m="auto" w="12px" h="12px" background={current === 2?"black": current > 2 ? "GrayText" : "gray.200"}></Box>
                     </Box>
 
                     <Box w="100%" onClick={()=>HandleStep(3)} cursor="pointer">
-                        <Text fontSize="sm" mb="5px" color={current === 3?"black":"GrayText"}>CONFIRM</Text>
+                        <Text fontSize="sm" mb="5px" color={current === 3?"black":"GrayText"}>PAYMENT</Text>
                         <Box m="auto" w="12px" h="12px" background={current === 3?"black": current > 3 ? "GrayText" : "gray.200"}></Box>
                     </Box>
 

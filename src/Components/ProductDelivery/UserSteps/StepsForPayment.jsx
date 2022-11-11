@@ -8,7 +8,12 @@ import DeliveryPaymentBox from '../DeliveryPaymentBox';
 
 function StepsForPayment(props) {
 
-    const allStep = [<ZeroLogin HandleStep={(ind)=>HandleStep(ind)} />,<OneDelivery/>,<TwoPayment/>,<ThreeConfirm/>]
+    const allStep = [
+    <ZeroLogin HandleStep={(ind)=>HandleStep(ind)} />,
+    <OneDelivery HandleStep={(ind)=>HandleStep(ind)}/>,
+    <ThreeConfirm HandleStep={(ind)=>HandleStep(ind)}/>,
+    <TwoPayment HandleStep={(ind)=>HandleStep(ind)}/>
+]
 
     const [step , setStep] = useState(0)
 
