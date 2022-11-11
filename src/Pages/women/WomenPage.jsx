@@ -1,18 +1,21 @@
 import React from "react"
 import "./WomenPage.css"
-
+import "slick-carousel/slick/slick.css";
+ import "slick-carousel/slick/slick-theme.css";
 import { BottomNav } from "../../Components/Navbar/BottomNav"
 import "../../Components/Navbar/BottomNav.css"
 import { Navbar } from "../../Components/Navbar/Navbar";
-import { Women } from "../../Components/Navbar/NavData"
+import {Women} from "../../Components/Navbar/NavData"
+import { Footer } from "../../Components/Footer/Footer";
 
 import { Link } from "react-router-dom";
 // import { useMediaQuery } from 'react-responsive'
 
 export const WomenPage = () => {
-
+  const data =Women
 
   return (<>
+  <br></br>
     <Navbar data={Women} />
     <BottomNav data={Women} />
     <div className="container">
@@ -30,7 +33,7 @@ export const WomenPage = () => {
         <h4 className="ha4">DON'T MISS OUT</h4>
         <h1 className="ha1">New Arrivals</h1>
         <h5 className="ha5">Jonathan Simkhai, Proenza Schouler, Staud...</h5>
-        <Link to="/womenproducts"><button className="btn">SHOP NOW</button></Link>
+        <Link to="/womenproducts"><button className="btnn">SHOP NOW</button></Link>
       </div>
       <div className="start">
         <div className="left">
@@ -194,6 +197,7 @@ export const WomenPage = () => {
       </div>
 
     </div>
+    <Footer data={data} />
   </>
   )
 }
