@@ -4,18 +4,20 @@ import WomenCard from "../Components/WomenCard";
 import { Pagination } from "../Components/Pagination";
 import { Button } from '@chakra-ui/react'
 
-import { getWomensProducts } from "../Redux/Mobile/action";
+import { getWomensProducts } from "../Redux/WomenReducer/action";
 // import "../Styles/women.css";
 import WomenFilter from "../Components/WomenFilter";
 import { useLocation, useSearchParams } from "react-router-dom";
 
 const WomenProducts = () => {
-  const womensdata = useSelector((state) => state.MobileReducer.womensdata);
+  const womensdata = useSelector((state) => state.WomenReducer.womensdata);
   const dispatch = useDispatch();
   const [page, setPage] = useState(1);
   const [searchParams] = useSearchParams();
   const  location = useLocation();
-  
+  var data = require("../Components/product.json");
+  const [products, setProducts] = useState(data.womensdata);
+  // console.log(products);
   const handlePageChange = (change) => {
     setPage((prev) => prev + change);
   };
@@ -36,7 +38,22 @@ const WomenProducts = () => {
     dispatch(getWomensProducts({ sort, order }));
   };
 
+  const handlechange = (e) => {
 
+    console.log(e.target.value);
+    if (e.target.value == "low-to-high") {
+      setProducts((product) => [...products.sort(
+        (a,b) => {
+          console.log(a.price-b.price)
+        }
+      )])
+      // setProducts((product) => [...products.sort((a, b) => (a.price - b.price))]);
+    }
+    else if (e.target.value == "high-to-low") {
+      setProducts((product) => [...products.sort((a, b) => (b.price - a.price))])
+    }
+
+  }
   return (
     <div className="groceries-container">
       <div className="top-Section" style={{marginTop:"110px"}}>
@@ -65,7 +82,14 @@ const WomenProducts = () => {
           <div className="right-sorting-container">
             <p> Showing <b>20</b> of <b>64</b> items </p>
             <div className="sort-box">
-                <p>Sort by:</p>
+
+            <select onChange={handlechange}>
+              <option>Sort-By</option>
+              <option value={"low-to-high"}>Price-Low To High</option>
+              <option value={"high-to-low"}>Price-High To Low</option>
+            </select>
+                {/* <p>Sort by:</p> */}
+                
                 {/* <Button colorScheme='teal' variant='outline' onClick={() => handleSortBy("title", "asc")} > Popularity </Button>
                 <Button colorScheme='teal' variant='outline' onClick={() => handleSortBy("price", "desc")} > High to Low </Button>
                 <Button colorScheme='teal' variant='outline' onClick={() => handleSortBy("price", "asc")} >  Low to High </Button>
