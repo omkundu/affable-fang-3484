@@ -71,7 +71,7 @@ function TwoPayment(props) {
                         <Stack direction="row" align="center" justify="start">
                             <Box position="relative" top="2px">
                                 <Radio size='sm' colorScheme='red' value="2">
-                                    <Icon as={BsPaypal} color="black" fontSize="35px" mx="2px" />
+                                    <Icon as={BsPaypal} color="black" fontSize="35px" mx="2px" /> 
                                 </Radio>
                             </Box>
                             <Box>
