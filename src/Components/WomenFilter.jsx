@@ -9,8 +9,8 @@ const WomenFilter = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const initialCategoryFilter = searchParams.getAll("category");
     const [category, setCategory] = useState( initialCategoryFilter || []);
-    const initialBrandFilter = searchParams.getAll("Pattern");
-    const [Pattern, setPattern] = useState( initialBrandFilter || []);
+    const initialBrandFilter = searchParams.getAll("size");
+    const [size, setsize] = useState( initialBrandFilter || []);
 
     const handleFilterCheckbox = (e) => {
         const newCategory = [...category]
@@ -28,25 +28,31 @@ const WomenFilter = () => {
     }
 
     const handleBrandFilter = (e) => {
-        const newCategory = [...Pattern]
+        const newCategory = [...size]
         if(newCategory.includes(e.target.value)){
             newCategory.splice(newCategory.indexOf(e.target.value), 1)
-            setPattern(newCategory)
+            setsize(newCategory)
         }
         else{
             newCategory.push(e.target.value)
-            setPattern(newCategory)
+            setsize(newCategory)
         }
     }
+ 
+
 
        useEffect(()=> {
-        if(category || Pattern){
+        if(category || size){
             let params = {};
             category && (params.category = category);
-            Pattern && (params.Pattern = Pattern);
+            size && (params.size = size);
             setSearchParams(params)
         }
-       }, [category,Pattern, setSearchParams])
+       }, [category,size, setSearchParams])
+
+// let p = size;
+// console.log(p);
+
 
   return (
     <div className='filter-parent'>
@@ -81,23 +87,23 @@ const WomenFilter = () => {
             <p>Pattern</p>
             <div className='brand-box'>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={Pattern.includes('Checked')} value="Checked" type="checkbox" onChange={handleBrandFilter}/>
-                    <label> Checked </label>
+                    <input className='checkbox' checked={size.includes('S')} value="S" type="checkbox" onChange={handleBrandFilter}/>
+                    <label> S </label>
                 </div>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={Pattern.includes('STORM')} value="STORM" type="checkbox" onChange={handleBrandFilter}/>
+                    <input className='checkbox' checked={size.includes('STORM')} value="STORM" type="checkbox" onChange={handleBrandFilter}/>
                     <label> M </label>
                 </div>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={Pattern.includes('TXOR')} value="TXOR" type="checkbox" onChange={handleBrandFilter}/>
+                    <input className='checkbox' checked={size.includes('TXOR')} value="TXOR" type="checkbox" onChange={handleBrandFilter}/>
                     <label> L </label>
                 </div>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={Pattern.includes('apple')} value="apple" type="checkbox" onChange={handleBrandFilter}/>
+                    <input className='checkbox' checked={size.includes('apple')} value="apple" type="checkbox" onChange={handleBrandFilter}/>
                     <label> XL </label>
                 </div>
                 <div className='filter-option'>
-                    <input className='checkbox' checked={Pattern.includes('Wingfi')} value="Wingfi" type="checkbox" onChange={handleBrandFilter}/>
+                    <input className='checkbox' checked={size.includes('Wingfi')} value="Wingfi" type="checkbox" onChange={handleBrandFilter}/>
                     <label> XXL </label>
                 </div>
                
