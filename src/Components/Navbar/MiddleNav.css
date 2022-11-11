@@ -5,8 +5,8 @@
 
 .MiddleNavLogo {
     text-align: center;
-    width: 70%;
-    margin-left: 340px;
+    width: 100%;
+    margin-left: 510px;
 }
 
 .MiddleNavLogo img {
@@ -15,7 +15,12 @@
 
 /* .Cart {} */
 
-
+.Cart{
+    font-size: 14px;
+    width: 100px;
+    margin: auto;
+    margin-left: -90px;
+}
 .CartIcon {
     display: inline-block;
     background-position: center;
