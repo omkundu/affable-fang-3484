@@ -4,7 +4,7 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 import { BoxIMG1, BoxIMG2 } from "../../../image/PaymentPageIMG"
 
 
-function OneDelivery(props) {
+function OneDelivery({HandleStep}) {
     return (
         <>
             <Stack m="30px auto" direction={["column", "row"]} w={["95%", "90%"]} gap={["0", "10px"]}>
@@ -158,8 +158,8 @@ function OneDelivery(props) {
             </Stack>
 
             <Stack direction={["column-reverse" , "row"]} justify={["center","space-between"]} w={["95%", "90%"]} gap={["0", "10px"]} m="auto">
-                <Button colorScheme="gray" variant="solid" size="xs" borderRadius={0} px="15px" w="max-content">BACK TO SHOPPING BAG</Button>
-                <Button color="white" background="black" _hover={{background:"rgb(49,49,49)"}} size="xs" borderRadius={0} px="15px" w="max-content">PROCEED TO CHECKOUT</Button>
+                <Button colorScheme="gray" variant="solid" size="xs" borderRadius={0} px="15px" w="max-content" onClick={()=>HandleStep(0)}>BACK TO SHOPPING BAG</Button>
+                <Button color="white" background="black" _hover={{background:"rgb(49,49,49)"}} size="xs" borderRadius={0} px="15px" w="max-content" onClick={()=>HandleStep(2)}>PROCEED TO CHECKOUT</Button>
             </Stack>
         </>
     );
