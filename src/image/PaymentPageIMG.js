@@ -1,1 +1,0 @@
-export const HeaderIMG = "https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20221102T163423"
