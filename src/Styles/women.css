@@ -16,7 +16,7 @@
     display: flex;
 }
 
-.right{
+.Right{
     width: 76%;
     height: auto;
     margin-left: 40px;
@@ -207,9 +207,9 @@
 }
 
 
-.left{
+.Left{
     width: 20%;
-    height: 2000px;
+    height: auto;
 }
 
 .filters-container {
