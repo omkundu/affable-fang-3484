@@ -59,6 +59,6 @@ Start the server
 
 ## Feedback
 
-If you have any feedback, please reach out to us
+If you have any feedback, please reach out to us.
 
 
