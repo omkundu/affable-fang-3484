@@ -13,6 +13,7 @@ export const ProductDetailsPage = () => {
   const {section,id} = useParams();
   const data = useSelector((state) => state);
   const dispatch = useDispatch();
+
   useEffect(() => {
     if (section === "WomenProducts" && id) {
       const womensdata = data.WomenReducer.womensdata;
@@ -40,17 +41,17 @@ export const ProductDetailsPage = () => {
         <div className="img-wrapper">
           <div className="img-details-wrapper">
             <div className="details-img">
-              <img className="img" src={currentProduct.images.img1} alt="img1" />
+              <img className="img" src={currentProduct.img1} alt="img1" />
             </div>
             <div className="details-img">
-              <img className="img" src={currentProduct.images.img2} alt="img2" />
+              <img className="img" src={currentProduct.img2} alt="img2" />
             </div>
             <div className="details-img">
-              <img className="img" src={currentProduct.images.img3} alt="img3" />
+              <img className="img" src={currentProduct.img3} alt="img3" />
             </div>
           </div>
           <div className="main-img-wrapper">
-            <img className="img" src={currentProduct.images.img1} alt="img1" />
+            <img className="img" src={currentProduct.img1} alt="img1" />
           </div>
         </div>
         <div className="produt-detail-wrapper">

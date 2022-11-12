@@ -62,7 +62,7 @@ const WomenProducts = () => {
         <p> Edit</p>
       </div>
       <div className="groceries-body">
-        <div className="left">{/* here write code for filtering */}
+        <div className="Left">{/* here write code for filtering */}
           <div className='filters-container'>
             <div className='filters-heading'>
                <p>Filters</p>
@@ -74,7 +74,7 @@ const WomenProducts = () => {
           </div>
         </div>
   {/* right section Start */}
-        <div className="right">
+        <div className="Right">
           <div className="top-section-imgcontainer">
             
           </div>
