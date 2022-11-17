@@ -11,7 +11,7 @@ import { Provider } from "react-redux";
 
 //Login With Google
 import { GoogleOAuthProvider } from '@react-oauth/google';
-const ClientID = "203777550442-g8l716tt85eb7mm5pejp6ndtrob3mnl7.apps.googleusercontent.com"
+const ClientID = "203777550442-g8l716tt85eb7mm5pejp6ndtrob3mnl7.apps.googleusercontent.com" 
 //........................
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
