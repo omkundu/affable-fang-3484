@@ -59,15 +59,15 @@ See our Project   [Deploy Link](https://affable-fang-3484-main.vercel.app/)
 
 
 
-## Features
-
+<h2 align="center">Features</h2>
 - Payment System
 - User Authentication
 - User Sign-in/Sign-up
 - Cross platform
 
 
-## Run Locally
+
+<h2 align="center">Run Locally</h2>
 
 Clone the project
 
@@ -94,7 +94,8 @@ Start the server
 ```
 
 
-## Feedback
+
+<h2 align="center">Feedback</h2>
 
 If you have any feedback, please reach out to us.
 
