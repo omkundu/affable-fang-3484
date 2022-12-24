@@ -1,13 +1,13 @@
 
-
-# Mytheresa.com Clone
+<h1 align="center">Mytheresa.com Clone</h1>
 
 Mytheresa is the finest edit in luxury fashion for women, men and kids. We have over 200 of the best international designers, 600 new arrivals each week, fast and reliable delivery, excellent customer service, utmost security and data protection, and free returns and exchanges within 30 days.
 
 See our Project   [Deploy Link](https://affable-fang-3484-main.vercel.app/)
 
 
-## 🛠 Tech Stack :
+
+<h1 align="center">🛠 Tech Stack :</h1>
 
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
 
