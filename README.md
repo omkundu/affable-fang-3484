@@ -33,9 +33,24 @@ See our Project   [Deploy Link](https://affable-fang-3484-main.vercel.app/)
 <br>
 <h1 align="center">Mens Section</h1>
 
-<img src="https://github.com/omkundu/affable-fang-3484/blob/main/src/image/2.jpeg?raw=true"/>
+<img src="https://github.com/omkundu/affable-fang-3484/blob/main/src/image/2.jpeg?raw=true" alt="Mans_section"/>
 
 </br>
+
+<br>
+<h1 align="center">Sign-up Section</h1>
+
+<img src="https://github.com/omkundu/affable-fang-3484/blob/main/src/image/3.jpeg?raw=true" alt="Sign-up_Section"/>
+
+</br>
+
+<br>
+<h1 align="center">Category Section</h1>
+
+<img src="https://github.com/omkundu/affable-fang-3484/blob/main/src/image/4.jpeg?raw=true" alt="Category_Section"/>
+
+</br>
+
 
 
 
