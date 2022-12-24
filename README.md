@@ -23,9 +23,12 @@ See our Project   [Deploy Link](https://affable-fang-3484-main.vercel.app/)
 
 ![Build Status](https://img.shields.io/badge/Paytm-002970?style=for-the-badge&logo=paytm&logoColor=00BAF2)
 
-
+<br>
+<h1>Header</h1>
 
 <img src="https://github.com/omkundu/affable-fang-3484/blob/main/src/image/jpg.jpeg?raw=true" alt="header"/>
+
+</br>
 
 
 
